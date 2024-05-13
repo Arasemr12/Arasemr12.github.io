@@ -1,6 +1,5 @@
 import { useLocation, useNavigate } from "react-router-dom";
-import {MotionValue, motion} from "framer-motion";
-import { useRef, useState } from "react";
+import {motion} from "framer-motion";
 
 const Item = (props:{active?:boolean,path:string,text:string}) => {
     const navigate = useNavigate();

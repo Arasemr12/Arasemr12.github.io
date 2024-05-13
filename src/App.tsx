@@ -1,8 +1,5 @@
 import Navbar from "./components/Navbar"
-import {BrowserRouter, Route, Routes, useLocation} from "react-router-dom";
-import Home from "./pages/Home";
-import { AnimatePresence } from "framer-motion";
-import About from "./pages/About";
+import {BrowserRouter,} from "react-router-dom";
 import AnimatedRoutes from "./components/AnimatedRoutes";
 
 const App = () => {
