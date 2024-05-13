@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+  *{
+    @apply p-0 m-0 box-border outline-none border-0 scroll-smooth select-none;
+  }
+
+  html,
+  body,
+  #root{
+    @apply w-full h-full bg-gray-900 text-white overflow-hidden relative;
+  }
+
+  .glowbg{
+    @apply absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 lg:w-2/5 w-full h-full bg-gradient-to-tr from-purple-600 to-blue-600 blur-[100px] opacity-50;
+    background-image: linear-gradient(to right top,#6c22bd,#8b25bb,#a52bb9,#bc34b7,#d040b5,#e645a5,#f55195,#ff6188,#ff796e,#ff965b,#f5b255,#e1cd60);
+  }
+
+  ::-webkit-scrollbar{
+    @apply h-2 w-2 bg-gray-700/50 rounded-full;
+  }
+
+  ::-webkit-scrollbar-thumb{
+    @apply bg-gray-600/50 hover:bg-gray-500/50 duration-300 rounded-full;
+  }
+}
